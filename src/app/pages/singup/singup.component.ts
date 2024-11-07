@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './singup.component.css'
 })
 export class SingupComponent {
-  showingPassord : boolean = false;
+  showingPassword : boolean = false;
+
+  toggleShowingPassword(): void {
+    this.showingPassword = !this.showingPassword;
+  }
 }
