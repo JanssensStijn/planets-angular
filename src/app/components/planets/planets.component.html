@@ -1,0 +1,17 @@
+<div class="container text-center">
+    @for (planet of planets; track planet.name; let isOdd = $odd){
+        <div class="row justify-content-center g-5">
+            <div class="col-xs-12 col-md-12 col-lg-4 planet">
+                <h6>HELLO {{planet.name}}</h6>
+                <h1>{{planet.name}}</h1>
+                <p>{{planet.description}}</p>
+                <a [href]="planet.wikipediaUrl" class="learnMoreBtn" target="_blank">Learn More</a>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 planet" [class.order-md-first]="isOdd">
+                <img [src]="planet.imgUrl" alt="earth" class="img-fluid">
+            </div>
+        </div>
+    } @empty{
+        <P>No planets available</P>
+    }
+</div>
