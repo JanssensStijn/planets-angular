@@ -10,7 +10,7 @@
     margin-top: -40px;
     margin-bottom: 20px;
 }
-.getStartedBtn{
+.funFactBtn{
     background-color: skyblue;
     color: black;
     font-size: 20px;
@@ -18,10 +18,9 @@
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
-    width: 200px;
     display: block;
 }
-.getStartedBtn:hover {
+.funFactBtn:hover {
     background-image: none;
     background-color: rgb(3, 0, 22);
     color: white;
@@ -58,8 +57,14 @@
     font-size: 25px;
     color: white;
     padding-top: 30px;
+}
+.main>.funFact{
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    color: white;
     padding-bottom: 50px;
 }
+
 .main>h1, form>h1{
     font-family: 'Orbitron';
 }

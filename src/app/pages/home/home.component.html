@@ -3,8 +3,9 @@
     <p class="title">SPACE</p>
     <div class="horLine"></div>
     <p class="description">Learn more about this fascinating corner of our universe we call our home.</p>
-    <div class="button-container">
-        <button class="getStartedBtn">Get Started</button>
+    <p class="funFact"><b>Did you know?</b> {{curentFunFact}}</p>
+    <div class="button-container"> 
+        <button class="funFactBtn" (click)="loadNewFunFact()" >Load new fun fact</button>
     </div>
     <img src="./img/solar-system.png" alt="our solar system" class="img-fluid">
 
