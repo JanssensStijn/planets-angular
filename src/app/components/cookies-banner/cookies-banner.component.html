@@ -1,6 +1,8 @@
-<div *ngIf="!areCookiesAccepted()" class="alert banner fade show fixed-bottom" role="alert">
+@if (!areCookiesAccepted()) {
+  <div class="alert banner fade show fixed-bottom" role="alert">
     <h1>Cookies notice</h1>
     <p>By using this website you accept that we use cookies to feed the astronauts.</p>
     <button type="button" class="btn btn-primary" (click)="acceptCookies()">Accept</button>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">Close</button>
-</div>
+  </div>
+}
