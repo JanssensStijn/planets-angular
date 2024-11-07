@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './singup.component.css'
 })
 export class SingupComponent {
-
+  showingPassord : boolean = false;
 }
