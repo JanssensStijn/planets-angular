@@ -1,0 +1,32 @@
+.logoColor1{
+    color: white;
+}
+.logoColor2{
+    color: skyblue;
+}
+.navbar-dark{
+    background-color: rgb(3, 0, 22);
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    font-size: 20px;
+    color : white;
+    padding: 5px 20px;
+    padding-bottom: 25px;
+}
+.nav-link.active{
+    border-bottom: 2px solid skyblue;
+}
+.nav-container{
+    margin: 0px 20px;
+    border-bottom: 2px solid rgb(75, 75, 75);
+}
