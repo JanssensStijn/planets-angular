@@ -1,0 +1,15 @@
+.banner{
+    margin: 0;
+    color: white;
+    background-color: rgb(3, 0, 22);
+    padding: 30px;
+    padding-left: 10%;
+    border-top: 2px solid skyblue;
+
+}
+.btn-close{
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
