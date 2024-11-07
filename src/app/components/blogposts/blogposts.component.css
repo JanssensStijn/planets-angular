@@ -1,0 +1,46 @@
+.readMoreBtn{
+    font-family: 'Orbitron';
+    font-weight: bold;
+    background-color: skyblue;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+.readMoreBtn:hover {
+    background-color: rgb(3, 0, 22);
+    color: white;
+    border: 1px solid skyblue;
+    transition:color 1s, background-color 1s, border 1s;
+}
+.card>i{
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.card-title{
+    font-family: 'Orbitron';
+    color: black;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.card-text{
+    font-family: 'AudioWide';
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.card-posttext{
+    font-family: 'Roboto Mono';
+    color: black;
+    font-size: 12px;
+    padding-top: 20px;
+}
+.card {
+    width: auto;
+    position: relative; /* Ensure that the overlay is positioned relative to the card */
+}

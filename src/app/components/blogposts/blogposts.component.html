@@ -1,0 +1,22 @@
+<div class="row g-5">
+    @for(post of blogposts; track post.title;){
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 card-container">
+            <div class="card">
+                <img [src]="post.imageUrl" class="card-img-top" [alt]="post.title">
+                @if(post.liked){
+                    <i class="bi bi-heart-fill" (click)="toggleLikePost(post)"></i>
+                } @else{
+                    <i class="bi bi-heart" (click)="toggleLikePost(post)"></i>
+                }
+                <div class="card-body">
+                    <h5 class="card-title">{{post.title}}</h5>
+                    <p class="card-text">{{post.text}}</p>
+                    <a [href]="post.readMoreLink" class="readMoreBtn">Read more</a>
+                    <p class="card-posttext">Posted on {{post.postDate}} by {{post.author}}</p>
+                </div>
+            </div>
+        </div>
+    } @empty{
+        <p>No blog posts available</p>
+    }
+</div>
